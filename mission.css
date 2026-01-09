@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2;
+    font-family: serif;
+    
+}
+
+h1{
+    color: black;
+    font-size: 3em;
+}
+h3{
+    color: rgb(83, 168, 196);
+    letter-spacing: 0.2em;
+}
+#content{
+    text-align: left;
+    padding: 32px;
+}
+#style{
+    font-style: italic;
+}
+hr{
+   margin-top: 0;
+}
