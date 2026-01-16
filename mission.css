@@ -1,28 +1,52 @@
-body{
+body {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
     font-size: 18px;
     line-height: 2;
     font-family: serif;
-    
+    padding-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h1{
+.theme-selector {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h1 {
     color: black;
     font-size: 3em;
 }
-h3{
+
+h3 {
     color: rgb(83, 168, 196);
     letter-spacing: 0.2em;
 }
-#content{
+
+#content {
     text-align: left;
     padding: 32px;
 }
-#style{
+
+#style {
     font-style: italic;
 }
-hr{
-   margin-top: 0;
+
+hr {
+    margin-top: 0;
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+body.dark h3 {
+    color: #8cc6f4;
 }
