@@ -11,8 +11,8 @@
     <header>
         <h1>Cool Pics 📷</h1>
         <nav>
-            <span class="menu-label">Menu</span>
-            <ul class="nav-links">
+            <span class="menu-label" id="mobile-menu-btn" style="cursor: pointer;">Menu ☰</span>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">People</a></li>
                 <li><a href="#">Places</a></li>
@@ -25,22 +25,28 @@
     <main>
         <h2>Current Work</h2>
         <div class="gallery">
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            <div class="card"><img src="images/cool_img.jpg" alt="cool image"></div>
-            
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 1" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 2" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 3" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 4" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 5" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 6" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 7" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 8" class="gallery-img"></div>
+            <div class="card"><img src="images/cool_img.jpg" alt="cool image 9" class="gallery-img"></div>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Not a real site 😊</p>
     </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
