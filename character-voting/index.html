@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Name Voting</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Character Name Voting</h1>
+        <p>Help shape the legends of our upcoming game.</p>
+    </header>
+
+    <nav>
+        <button id="nav-home" class="active">Vote Now</button>
+        <button id="nav-leaderboard">Leaderboard</button>
+    </nav>
+
+    <main>
+        <section id="view-home" class="view active-view">
+            <div class="intro-text">
+                <h2>Choose Your Favorite Name</h2>
+                <p class="warning-text">You only have <strong>ONE</strong> vote total. Choose wisely!</p>
+            </div>
+            
+            <div class="heroes-grid">
+                <div class="card hero-card">
+                    <img src="images/tall_pirate.png" alt="Tall Pirate" class="portrait">
+                    <h3>The Tall Pirate</h3>
+                    <div id="options-hero1" class="options-container"></div>
+                </div>
+
+                <div class="card hero-card">
+                    <img src="images/female_pirate.png" alt="Female Pirate" class="portrait">
+                    <h3 class="female-title">The Female Pirate</h3>
+                    <div id="options-hero2" class="options-container"></div>
+                </div>
+
+                <div class="card hero-card">
+                    <img src="images/short_pirate.png" alt="Short Pirate" class="portrait">
+                    <h3>The Short Pirate</h3>
+                    <div id="options-hero3" class="options-container"></div>
+                </div>
+            </div>
+
+            <div id="vote-message" class="hidden success-msg">Thanks for voting!</div>
+
+            <div class="card suggestion-box">
+                <h2>Have a better idea?</h2>
+                <p>Suggest a custom name (This counts as your vote!)</p>
+                <form id="suggestion-form">
+                    <div class="input-group">
+                        <select id="hero-select" required>
+                            <option value="" disabled selected>Select a Hero...</option>
+                            <option value="hero1">The Tall Pirate</option>
+                            <option value="hero2">The Female Pirate</option>
+                            <option value="hero3">The Short Pirate</option>
+                        </select>
+                        <input type="text" id="new-name" placeholder="Enter a custom name..." required autocomplete="off">
+                        <button type="submit" id="submit-btn" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+                <div id="suggestion-message" class="hidden success-msg">Suggestion added!</div>
+            </div>
+        </section>
+
+        <section id="view-leaderboard" class="view hidden">
+            <div class="intro-text">
+                <h2>Live Standings</h2>
+                <p>The community's top choices across all characters.</p>
+            </div>
+            
+            <div class="card table-card">
+                <table id="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Hero</th>
+                            <th>Name</th>
+                            <th>Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
